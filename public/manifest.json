@@ -1,0 +1,17 @@
+{
+    "name": "Brasil Roleplay - Regulamento Policial",
+    "short_name": "BRA Roleplay",
+    "description": "Portal oficial de regras e procedimentos da força policial de Brasil Roleplay",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#0F1116",
+    "theme_color": "#22c55e",
+    "icons": [
+        {
+            "src": "/logo.png",
+            "sizes": "any",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
