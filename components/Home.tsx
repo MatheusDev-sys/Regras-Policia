@@ -15,7 +15,7 @@ const Home: React.FC<HomeProps> = ({ onEnterDocs, version = 'v3.2', onTermsClick
       {/* Cover Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/cover.png"
+          src={`${import.meta.env.BASE_URL}cover.png`}
           alt="Brasil Roleplay Background"
           className="w-full h-full object-cover opacity-40"
         />
@@ -30,7 +30,7 @@ const Home: React.FC<HomeProps> = ({ onEnterDocs, version = 'v3.2', onTermsClick
       {/* Navbar Minimalista */}
       <nav className="relative z-10 flex items-center justify-between px-6 py-6 md:px-12">
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="Brasil Roleplay Logo" className="w-10 h-10 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Brasil Roleplay Logo" className="w-10 h-10 object-contain" />
           <span className="font-bold text-xl tracking-tight">Brasil Roleplay</span>
         </div>
         <div className="hidden md:flex items-center gap-6 text-sm text-gray-400">
@@ -98,7 +98,7 @@ const Home: React.FC<HomeProps> = ({ onEnterDocs, version = 'v3.2', onTermsClick
               {/* Image Layer */}
               <div className="absolute inset-0">
                 <img
-                  src="/cover.png"
+                  src={`${import.meta.env.BASE_URL}cover.png`}
                   alt="Brasil Roleplay - Regulamento da Polícia"
                   className="w-full h-full object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500"
                 />
@@ -142,7 +142,7 @@ const Home: React.FC<HomeProps> = ({ onEnterDocs, version = 'v3.2', onTermsClick
             <p>&copy; 2025 Brasil Roleplay. Todos os direitos reservados.</p>
             <span className="hidden md:inline">•</span>
             <a href="#" className="flex items-center gap-2 hover:text-green-400 transition-colors">
-              <img src="/matheus-dev.jpg" alt="Matheus Dev" className="w-5 h-5 rounded-full" />
+              <img src={`${import.meta.env.BASE_URL}matheus-dev.jpg`} alt="Matheus Dev" className="w-5 h-5 rounded-full" />
               <span>Desenvolvido por <strong>Matheus Dev</strong></span>
             </a>
           </div>

@@ -156,7 +156,7 @@ const Sidebar: React.FC<SidebarProps> = ({
           {/* Logo Area */}
           <div className="h-16 flex items-center justify-between px-6 border-b border-gray-800/60 bg-[#0B0D12]">
             <div className="flex items-center">
-              <img src="/logo.png" alt="Brasil Roleplay" className="w-8 h-8 object-contain mr-3" />
+              <img src={`${import.meta.env.BASE_URL}logo.png`} alt="Brasil Roleplay" className="w-8 h-8 object-contain mr-3" />
               <span className="font-bold text-gray-200 tracking-tight">Regras</span>
             </div>
             {canEdit && (
@@ -263,8 +263,8 @@ const Sidebar: React.FC<SidebarProps> = ({
                                 key={key}
                                 onClick={() => handleTabClick(key)}
                                 className={`w-full flex items-center gap-3 px-4 py-2 text-sm transition-all border-l-2 ${activeTab === key && currentView === 'docs'
-                                    ? 'bg-green-500/10 text-green-400 border-green-500 font-medium'
-                                    : 'text-gray-400 hover:bg-gray-800 hover:text-white border-transparent'
+                                  ? 'bg-green-500/10 text-green-400 border-green-500 font-medium'
+                                  : 'text-gray-400 hover:bg-gray-800 hover:text-white border-transparent'
                                   }`}
                               >
                                 {Icon && <Icon size={16} className="shrink-0 opacity-70" />}
@@ -341,7 +341,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
             {/* Developer Credits */}
             <div className="flex items-center justify-center gap-2 pt-2 border-t border-gray-800/30">
-              <img src="/matheus-dev.jpg" alt="Matheus Dev" className="w-4 h-4 rounded-full" />
+              <img src={`${import.meta.env.BASE_URL}matheus-dev.jpg`} alt="Matheus Dev" className="w-4 h-4 rounded-full" />
               <span className="text-[10px] text-gray-600">
                 by <strong className="text-gray-500">Matheus Dev</strong>
               </span>
